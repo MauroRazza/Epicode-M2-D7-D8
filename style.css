@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Arimo', sans-serif;
+    background-image: linear-gradient( 95.2deg, rgba(173, 252, 234, 0.623) 26.8%, rgba(192, 229, 246, 0.26) 64% );
+    min-height: 100vh;
+}
+
+/* Nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 1rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+nav img {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* User Section */
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+nav i {
+    font-size: 2rem;
+    color: #1dd3b0;
+    cursor: pointer;
+}
+
+nav div:hover {
+    color: #1dd3b0;
+    transition: 0.2s;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+header div div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Headline */
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #3f3f3f;
+}
+
+header span {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3f3f3f;
+    text-underline-offset: -0.5rem;
+}
+
+span:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    width: 230px;
+    height: 14px;
+    background: #affc41;
+    z-index: -1;
+}
+
+span:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    width: 230px;
+    height: 14px;
+    background: #1dd3b0;
+    z-index: -2;
+}
+
+header h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #3f3f3f;
+    padding-top: 2rem;
+}
+
+/*  Background Image */
+
+header img {
+    width: 450px;
+    cursor: pointer;
+}
+
+/* Search Bar */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    height: 100px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 10px;
+    padding: 2rem;
+}
+ 
+.searchbar div {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar:hover{
+    width: 1000px;
+    height: 100px;
+    transition: 0.4s;
+}
+
+#bar {
+    width: 1px;
+    height: 35px;
+    background-color: #3f3f3f;
+    margin: 2rem;
+}
+
+main div i {
+    font-size: 1.3rem;
+    color: #3f3f3f;
+}
+
+/*  Input & Button Searchbar */
+
+input {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Arimo', sans-serif;
+    border: none;
+    border-radius: 10px;
+    color: #3f3f3f;
+    padding: 1rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+.searchbar button {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3f3f3f;
+    background-color: #1dd3b0;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+.searchbar button:hover {
+    background-color: #affc41;
+    color: #3f3f3f;
+    transition: 0.2s;
+}
+
+/*  Search Bar Result */
+
+.bar-result{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1;
+    width: 600px;
+    height: 100px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+    z-index: 3;
+}
+
+/*  Result */
+
+.bar-result ul li{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+li::marker {
+    content: "";
+}
+
+li img{
+    width: 300px;
+    color: #3f3f3f;
+    padding: 1rem;
+}
+
+.bar-result h5{
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #1dd3b0;
+    margin: 0.5rem 0;
+}
+
+ul button{
+    font-family: 'Arimo', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3f3f3f;
+    background-color: #1dd3b0;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+ul button:hover{
+    background-color: #affc41;
+    color: #3f3f3f;
+    transition: 0.2s;
+}
+
+/*  Count */
+
+#count li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1dd3b0;
+    margin: 0.5rem 0;
+}
+
+li h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3f3f3f;
+    margin: 1rem;
+}
+
+#count li i{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #1dd3b0;
+    margin: 1rem;
+}
+
+/*  Clear Button */
+
+#clear{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    background-color: none;
+    margin: 0.5rem;
+}
+
+#clear > i{
+    font-size: 2rem;
+    color: #1dd3b0;
+}
+
+#clear > i:hover{
+    color: #affc41;
+    transition: 0.2s;
+}
+
+/*  Footer */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 1200px;
+    height: auto;
+    padding: 2rem 0;
+}
+
+/*  Footer Info */
+
+footer div img{
+    width: 200px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3f3f3f;
+    padding: 0.5rem 0;
+}
+
+footer a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3f3f3f;
+    padding-right: 1rem;
+}
+
+footer a:hover{
+    color: #1dd3b0;
+    transition: 0.2s;
+}
+
+/*  Social */
+
+footer i{
+    font-size: 1.5rem;
+    color: #3f3f3f;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: #1dd3b0;
+    transition: 0.2s;
+}
